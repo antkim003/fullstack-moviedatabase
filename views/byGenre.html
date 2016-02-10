@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="title">
+    By Genre
+  </div>
+  {% for obj in movies %}
+    <div>Genre: {{ obj.genre }}</div>
+  {% endfor %}
+
+{% endblock %}

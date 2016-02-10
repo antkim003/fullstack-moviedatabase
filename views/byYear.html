@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  {% for obj in movies %}
+    <div>Year: {{ obj.year }} - Name: {{ obj.name }}</div>
+  {% endfor %}
+
+{% endblock %}
